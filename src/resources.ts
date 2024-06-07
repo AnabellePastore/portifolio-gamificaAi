@@ -2,7 +2,7 @@ import { ImageSource, Loader } from "excalibur";
 import sword from "./images/sword.png";
 import logo from "./images/logo.png";
 import logoVertical from "./images/logo-vertical.png";
-import gamificacao from "./images/gamificacao-segunda tela.png"
+import gamificacao from "./images/gamificacao.png"
 
 
 

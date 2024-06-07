@@ -3,6 +3,7 @@ import { welcomeScene } from "./scenes/welcomeScene";
 import { loader } from "./resources";
 import { historyScene } from "./scenes/historyScene";
 import { gamificationScene } from "./scenes/gamification.Scene";
+import { expoScene } from "./scenes/expoScene.Scene";
 
 
 const game = new Engine({
