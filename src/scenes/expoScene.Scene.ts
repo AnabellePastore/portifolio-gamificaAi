@@ -1,4 +1,5 @@
-import { Color, FadeInOut, Scene, Transition } from "excalibur";
+import { Color, Engine, FadeInOut, Scene, Transition, hasOnInitialize } from "excalibur";
+import { Resources } from "../resources";
 
 export class expoScene extends Scene {
     onTransition(direction: "in" | "out"): Transition | undefined {
@@ -8,4 +9,16 @@ export class expoScene extends Scene {
             duration: 1000
         })
     }
+
+onInitialize(engine: Engine<any>): void {
+    //carregar mapa
+    let tileMap = Resources.Mapa
+
+    //adcionar o mapa na cena
+    tileMap.addToScene(this)
 }
+
+}
+
+
+
