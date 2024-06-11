@@ -9,7 +9,9 @@ import { expoScene } from "./scenes/expoScene.Scene";
 const game = new Engine({
   width: 1200,
   height: 800,
-  canvasElementId: "jogo"
+  canvasElementId: "jogo",
+  //otimizar para pixel art
+  pixelArt: true
 })
 
 //tem q apertar enter para importar a mrda da cena

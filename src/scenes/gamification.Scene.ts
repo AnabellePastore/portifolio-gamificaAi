@@ -58,7 +58,7 @@ fadeOutElement(elemento: HTMLElement) {
         //configurar a cena para detectar a tecla Enter e ir para a proxima tela
         this.input.keyboard.on("press", (event) => {
             if(event.key == Keys.Enter){
-                engine.goToScene("exposição")
+                engine.goToScene("exposicao")
             }
         })
 
