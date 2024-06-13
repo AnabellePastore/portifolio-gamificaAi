@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="29" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="1">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="29" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="48">
  <tileset firstgid="1" source="tileset_paredes.tsx"/>
  <tileset firstgid="8285" source="tileset_generic.tsx"/>
  <tileset firstgid="9533" source="tileset_estoque.tsx"/>
@@ -52,6 +52,20 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="12" name="personagens">
+  <object id="44" name="player_spawn" x="479" y="523">
+   <point/>
+  </object>
+  <object id="45" name="npc_a" x="272.5" y="229">
+   <point/>
+  </object>
+  <object id="46" name="npc_b" x="465.5" y="227">
+   <point/>
+  </object>
+  <object id="47" name="npc_c" x="688.75" y="225.5">
+   <point/>
+  </object>
+ </objectgroup>
  <layer id="5" name="paredes" width="29" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -148,4 +162,66 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <layer id="9" name="BlocosColisores" width="29" height="20" opacity="0" offsetx="138" offsety="100">
+  <properties>
+   <property name="solid" type="bool" value="true"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,0,0,
+0,0,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,
+0,0,393,393,393,393,393,393,393,393,393,393,393,0,0,0,0,393,393,393,393,393,393,393,393,393,393,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,393,0,0,0,0,393,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,393,393,393,393,393,393,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="11" name="ObjetosColisores">
+  <object id="2" name="mesa_tenis" x="656" y="364.667" width="61.6667" height="99.6667"/>
+  <object id="3" name="mesa_stant_a" x="234.727" y="247.636" width="75.0909" height="35.2727"/>
+  <object id="4" name="mesa_stand_b" x="426.727" y="248.909" width="75.8182" height="33.4545"/>
+  <object id="5" name="mesa_stand_c" x="650.182" y="247.818" width="76.9091" height="34.3636"/>
+  <object id="6" name="mesa_conversa_b" x="313.75" y="384" width="76.25" height="76"/>
+  <object id="8" name="mesa_conversa_a" x="186.75" y="321.5" width="75.5" height="74"/>
+  <object id="9" name="cadeira_conversa_cima_a" x="205.75" y="303.909" width="36" height="16.5909"/>
+  <object id="10" name="cadeira_conversa_esquerda_a" x="164.25" y="343.977" width="22" height="37.2727"/>
+  <object id="12" name="cadeira_conversa_direita_a" x="263.75" y="344.705" width="21" height="39.5455"/>
+  <object id="13" name="cadeira_conversa_baixo_a" x="199.75" y="390" width="47.25" height="34.75"/>
+  <object id="18" name="cadeira_conversa_cima_b" x="333.273" y="368.545" width="39.6364" height="19.8182"/>
+  <object id="19" name="cadeira_conversa_esquerda_b" x="288.909" y="400" width="26.1818" height="44"/>
+  <object id="21" name="cadeira_conversa_direita_b" x="390.182" y="399.091" width="22.9091" height="44.7273"/>
+  <object id="23" name="cadeira_conversa_baixo_b" x="330.364" y="454" width="44.1818" height="37.6364"/>
+  <object id="24" name="estante_esquerda_1" x="98.25" y="193.25" width="24.25" height="57"/>
+  <object id="25" name="estante_esquerda_2" x="96.75" y="419" width="24.75" height="90.25"/>
+  <object id="27" name="TV" x="98.5" y="349" width="25" height="40.5"/>
+  <object id="28" x="96.25" y="249" width="0.75" height="0.5"/>
+  <object id="29" name="planta_esquerda" x="100" y="279.25" width="22.5" height="18.75"/>
+  <object id="30" name="planta_cima_1" x="116.75" y="122.5" width="23.5" height="18.75"/>
+  <object id="31" name="estante_cima_1" x="159.5" y="111.5" width="92.75" height="33.5"/>
+  <object id="32" name="plnta_cima_2" x="262.25" y="124.25" width="20.5" height="18.25"/>
+  <object id="33" name="estante_cima_2" x="296.75" y="112.5" width="50" height="32"/>
+  <object id="34" name="planta_cima_3" x="422.5" y="124.5" width="18.75" height="20"/>
+  <object id="35" name="estante_cima_3" x="487.5" y="110.5" width="49.75" height="34"/>
+  <object id="36" name="planta_cima-4" x="550.75" y="125.5" width="19.5" height="18.75"/>
+  <object id="37" name="estante_cima_4" x="583.5" y="109" width="49.25" height="35.75"/>
+  <object id="38" name="planta_cima_5" x="645.75" y="123.25" width="19.5" height="21.25"/>
+  <object id="39" name="estante_cima_5" x="672" y="107" width="93.5" height="37.75"/>
+  <object id="40" name="planta_cima_6" x="802.667" y="125.333" width="24.6667" height="20.3333"/>
+  <object id="41" name="estante_direita_1" x="806.667" y="198.667" width="21.6667" height="82.3333"/>
+  <object id="42" name="planta_direita" x="806.667" y="309.667" width="19.6667" height="17.3333"/>
+  <object id="43" name="estante_direita_2" x="807.333" y="359.667" width="21" height="83"/>
+ </objectgroup>
 </map>
