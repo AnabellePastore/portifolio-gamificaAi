@@ -21,7 +21,7 @@ game.addScene("gamificacao", new gamificationScene())
 game.addScene("exposicao", new expoScene())
 
 game.start(loader).then(() => {
-  game.goToScene("historia", {
+  game.goToScene("exposicao", {
     // Adiciona transição lenta ao ir para a welcomeScene
     sourceOut: new FadeInOut({ duration: 1000 })
   })
