@@ -17,6 +17,13 @@ onInitialize(engine: Engine<any>): void {
     //ativar o modo de debug
     // engine.toggleDebug()
 
+    //carregar musica de fundo BGM(background music)
+    let musicafundo =  Resources.ritmadaBGM
+    //configurar a musica e executar
+    musicafundo.loop = true
+    musicafundo.play(0.5)
+
+
     //carregar mapa
     let tileMap = Resources.Mapa
 

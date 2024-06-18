@@ -1,8 +1,9 @@
-import { ImageFiltering, ImageSource, Loader } from "excalibur";
+import { ImageFiltering, ImageSource, Loader, Sound } from "excalibur";
 import sword from "./images/sword.png";
 import logo from "./images/logo.png";
 import logoVertical from "./images/logo-vertical.png";
-import gamificacao from "./images/gamificacao.png"
+import gamificacao from "./images/gamificacao.png";
+import NpcFalandoImg from "./images/npc jogo gamificaai copiar.png";
 
 import pngTilesetPath from "./maps/Room_Builder_32x32.png?url"
 
@@ -16,6 +17,8 @@ import { TiledResource } from "@excaliburjs/plugin-tiled";
 
 import playerSpritePath from "./sprites/personagem_1.png"
 
+import ritmada from "./sounds/ritmada_zelda.mp3"
+
 
 export const Resources = {
   Sword: new ImageSource(sword),
@@ -23,6 +26,8 @@ export const Resources = {
   logoVertical: new ImageSource(logoVertical),
   PlayerSpriteSheet: new ImageSource(playerSpritePath, { filtering: ImageFiltering.Pixel}),
   gamificacao: new ImageSource(gamificacao),
+  NpcFalandoImg: new ImageSource(NpcFalandoImg),
+  ritmadaBGM: new Sound (ritmada),
   Mapa: new TiledResource(tmxMapaPath, {
     pathMap:[
       {path: "sem título.txt,", output: tmxMapaPath},

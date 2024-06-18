@@ -284,7 +284,46 @@ export class Player extends Actor{
                 
             }
         })
+
+
+
+
+
+        //configurar o player para monitorar evento "press" -> pressionar
+    engine.input.keyboard.on ("press", (event) => {
+        //se a tecla pressionada for a f e tiver objeto proximo
+        if (event.key == Keys.F && this.temObjetoProximo) {
+            
+
+            //identifica o alvo da interação
+            if (this.ultimoColisor?.owner.name == "mesa_stand_a") {
+                console.log("essa é a mesa A")
+
+                //vai para a cena passando qual o objeto da interação
+                engine.goToScene("case", {
+                    sceneActivationData: {
+                        //passa o nome do actor que interagiu como player
+                        nomeDoActor:
+                        this.ultimoColisor?.owner.name
+                    }
+                })
+            } 
+
+            if (this.ultimoColisor?.owner.name == "mesa_stand_b") {
+                console.log("essa é a mesa B")
+            } 
+    
+            if (this.ultimoColisor?.owner.name == "mesa_stand_c") {
+                console.log("essa é a mesa C")
+            } 
+        }
+
+       
+    })
     }
+
+    
+
 
     onPreCollisionResolve(self: Collider, other: Collider, side: Side, contact: CollisionContact): void {
         //indicar que tem um objeto proximo
@@ -299,7 +338,9 @@ export class Player extends Actor{
     if (this.ultimoColisor && this.pos.distance(this.ultimoColisor.worldPos) > 42) {
         //marcar que o objet nçao está próximo
         this.temObjetoProximo = false
-        console.log("está longe")
-    }
+
+        //console.log("está longe")
+        }
     }
 }
+

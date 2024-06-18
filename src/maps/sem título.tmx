@@ -191,7 +191,7 @@
  </layer>
  <objectgroup id="11" name="ObjetosColisores">
   <object id="2" name="mesa_tenis" x="656" y="364.667" width="61.6667" height="99.6667"/>
-  <object id="3" name="mesa_stant_a" x="234.727" y="247.636" width="75.0909" height="35.2727"/>
+  <object id="3" name="mesa_stand_a" x="234.727" y="247.636" width="75.0909" height="35.2727"/>
   <object id="4" name="mesa_stand_b" x="426.727" y="248.909" width="75.8182" height="33.4545"/>
   <object id="5" name="mesa_stand_c" x="650.182" y="247.818" width="76.9091" height="34.3636"/>
   <object id="6" name="mesa_conversa_b" x="313.75" y="384" width="76.25" height="76"/>
