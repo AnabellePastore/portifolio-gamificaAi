@@ -91,11 +91,4 @@ display: flex;
 justify-content: center;
 }
 
-.texto-case:after{/*Triangulo*/
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-}
+

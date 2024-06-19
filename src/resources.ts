@@ -3,7 +3,9 @@ import sword from "./images/sword.png";
 import logo from "./images/logo.png";
 import logoVertical from "./images/logo-vertical.png";
 import gamificacao from "./images/gamificacao.png";
-import NpcFalandoImg1 from "./images/npc jogo gamificaai copiar.png";
+import NpcFalandoImg1 from "./images/npc1.png";
+import NpcFalandoImg2 from "./images/npc2.png";
+import NpcFalandoImg3 from "./images/npc3.png";
 
 import pngTilesetPath from "./maps/Room_Builder_32x32.png?url"
 
@@ -26,7 +28,11 @@ export const Resources = {
   logoVertical: new ImageSource(logoVertical),
   PlayerSpriteSheet: new ImageSource(playerSpritePath, { filtering: ImageFiltering.Pixel}),
   gamificacao: new ImageSource(gamificacao),
-  NpcFalandoImg: new ImageSource(NpcFalandoImg1),
+  NpcFalandoImg1: new ImageSource(NpcFalandoImg1),
+  NpcFalandoImg2: new ImageSource(NpcFalandoImg2),
+  NpcFalandoImg3: new ImageSource(NpcFalandoImg3),
+
+  
   ritmadaBGM: new Sound (ritmada),
   Mapa: new TiledResource(tmxMapaPath, {
     pathMap:[

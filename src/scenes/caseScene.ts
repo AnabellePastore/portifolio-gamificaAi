@@ -28,7 +28,7 @@ export class caseScene extends Scene {
         this.elementoTexto.classList.add("texto-case")
        
         //adcionar elemento ao container game
-        let containerGame = document.querySelector(".containei-game")
+        let containerGame = document.querySelector(".container-game")
         containerGame?.appendChild(this.elementoTexto)
 
         //ao pressionar esc volta paraa exposição
@@ -46,9 +46,11 @@ export class caseScene extends Scene {
         })
 
         //carregar imagens dos npc
-        let imagemNpc1 = Resources.NpcFalandoImg.toSprite()
+        let imagemNpc1 = Resources.NpcFalandoImg1.toSprite()
+        let imagemNpc2 = Resources.NpcFalandoImg2.toSprite()
+        let imagemNpc3 = Resources.NpcFalandoImg3.toSprite()
 
-        this.listaImagens = []
+        this.listaImagens = [imagemNpc1,imagemNpc2, imagemNpc3 ]
     }
 
 
@@ -70,7 +72,11 @@ export class caseScene extends Scene {
                  criando assim, um rankin de sucesso  de maneira saudável e consciente ente os alunos.`
 
 
-                 //inserir o sprite no actor da mesa a
+                 // Inserir o sprite no actor da mesa A
+            this.actorimgnpc?.graphics.add(this.listaImagens![0])
+
+             // Mudar o zoom da imagem
+             this.actorimgnpc!.graphics.current!.scale = vec(0.2, 0.2)
 
         }
         if (this.objetoInteracao.nomeDoActor ==  "mesa_stand_b"){
@@ -84,6 +90,12 @@ export class caseScene extends Scene {
                 Recompensas como descontos, cartões-presente, dias de folga e viagens.
                 Exemplo de Ideia Promocional:
                 "Participe do Desafio de Produtividade TechNova: ganhe pontos por suas contribuições diárias e troque-os por incríveis recompensas, como dias de folga extra e viagens de fim de semana!".`
+
+                // Inserir o sprite no actor da mesa B
+                this.actorimgnpc?.graphics.add(this.listaImagens![1])
+
+             // Mudar o zoom da imagem
+             this.actorimgnpc!.graphics.current!.scale = vec(0.2, 0.2)
         }
         if (this.objetoInteracao.nomeDoActor ==  "mesa_stand_c"){
             //mesa c detectada
@@ -98,7 +110,19 @@ export class caseScene extends Scene {
                  Ideia Promocional:
                  "Participe do Desafio de Fidelidade FreshMart: acumule pontos em cada compra e troque por descontos, cestas gourmet e experiências VIP. Torne suas compras ainda mais gratificantes!"
                  .`
+
+
+
+                  // Inserir o sprite no actor da mesa C
+                this.actorimgnpc?.graphics.add(this.listaImagens![2])
+
+                // Mudar o zoom da imagem
+                this.actorimgnpc!.graphics.current!.scale = vec(0.2, 0.2)
         }
+
+        // Adiciona o actor da imagem na tela
+        this.add(this.actorimgnpc!)
+
 
 
 
