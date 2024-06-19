@@ -67,7 +67,7 @@ body {
   line-height: 2;
 }
 
-.sobre-case1 {
+.texto-case{
   width: 650px;
   height: 400px;
 
@@ -86,12 +86,12 @@ body {
 
 }
 
-.sobre-case1 h2{
+.texto-case h2{
 display: flex;
 justify-content: center;
 }
 
-.sobre-case1:after{/*Triangulo*/
+.texto-case:after{/*Triangulo*/
   content: "";
   width: 0;
   height: 0;
