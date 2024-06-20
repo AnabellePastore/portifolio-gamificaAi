@@ -18,6 +18,9 @@ import tmxMapaPath from "./maps/sem título.tmx?url"
 import { TiledResource } from "@excaliburjs/plugin-tiled";
 
 import playerSpritePath from "./sprites/personagem_1.png"
+import npcASpriteSheet from "./sprites/personagem_2.png"
+import npcBSpriteSheet from "./sprites/personagem_3.png"
+import npcCSpriteSheet from "./sprites/personagem_5.png"
 
 import ritmada from "./sounds/ritmada_zelda.mp3"
 
@@ -31,6 +34,10 @@ export const Resources = {
   NpcFalandoImg1: new ImageSource(NpcFalandoImg1),
   NpcFalandoImg2: new ImageSource(NpcFalandoImg2),
   NpcFalandoImg3: new ImageSource(NpcFalandoImg3),
+
+  npcASpriteSheet: new ImageSource(npcASpriteSheet),
+  npcBSpriteSheet: new ImageSource(npcBSpriteSheet),
+  npcCSpriteSheet: new ImageSource(npcCSpriteSheet),
 
   
   ritmadaBGM: new Sound (ritmada),

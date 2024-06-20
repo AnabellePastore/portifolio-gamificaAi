@@ -59,20 +59,20 @@ onInitialize(engine: Engine<any>): void {
     let npcA = new Npc(
         vec(NpcSpawnPointA.x + offsetX,  NpcSpawnPointA.y + offsetY),
         Color.Blue,
-        "npcA"
+        NpcSpawnPointA.tiledObject.name!
     )
     
 
     let npcB = new Npc(
         vec(NpcSpawnPointB.x + offsetX,  NpcSpawnPointB.y + offsetY),
         Color.Violet,
-        "npcB"
+        NpcSpawnPointB.tiledObject.name!
     )
 
     let npcC = new Npc(
         vec(NpcSpawnPointC.x + offsetX,  NpcSpawnPointC.y + offsetY),
         Color.Yellow,
-        "npcC"
+        NpcSpawnPointC.tiledObject.name!
     )
 
     //adcionar os npc

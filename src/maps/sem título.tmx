@@ -56,13 +56,13 @@
   <object id="44" name="player_spawn" x="479" y="523">
    <point/>
   </object>
-  <object id="45" name="npc_a" x="272.5" y="229">
+  <object id="45" name="npc_a" x="271.75" y="211.75">
    <point/>
   </object>
-  <object id="46" name="npc_b" x="465.5" y="227">
+  <object id="46" name="npc_b" x="464.25" y="211.5">
    <point/>
   </object>
-  <object id="47" name="npc_c" x="688.75" y="225.5">
+  <object id="47" name="npc_c" x="687" y="212.25">
    <point/>
   </object>
  </objectgroup>
